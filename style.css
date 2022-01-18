@@ -1,0 +1,92 @@
+body{
+    background-color: #f6f6f6;
+}
+
+.row1,.row2,.row3,.row4,.row5{
+    display: flex;
+}
+
+button{
+    font-style: bold;
+    background-color: #eee;
+    border: 2px solid black;
+    font-size: large;
+    border-radius: 5px;
+    margin: 5px;
+    height: 70px;
+    width: 90px;
+}
+
+button:hover{
+    background-color: #ddd;
+}
+
+button:active{
+    background-color: #ccc;
+}
+.calculator{
+    background-color: #aaaaaa;
+    border-radius: 12px;
+    padding: 25px;
+    padding-bottom: 0px;
+    margin: auto;
+    border: 2px solid black;
+    height: 550px;
+    width: 350px;
+
+}
+
+.screen{
+    background-color: #eee;
+    border-radius: 8px;
+    margin: auto;
+    border: 2px solid black;
+    height: 120px;
+    width: 370 px;
+    margin-bottom: 13px;
+}
+
+#topScreen{
+    margin-top: 10px;
+    height: 40px;
+    padding-right: 18px;
+    text-align: right;
+    font-size: 30px;
+
+}
+
+#ansScreen{
+    padding-bottom: 10px;
+    padding-right: 15px;
+    height: 55px;
+    text-align: right;
+    font-size: 50px;
+}
+
+#clear, #delete{
+    width: 190px;
+}
+
+#clear{
+    background-color: #faa;
+}
+
+#clear:hover{
+    background-color: #e99;
+}
+
+#clear:active{
+    background-color: #d88;
+}
+
+#delete{
+    background-color: #aaf;
+}
+
+#delete:hover{
+    background-color: #99e;
+}
+
+#delete:active{
+    background-color: #88d;
+}
