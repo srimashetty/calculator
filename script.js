@@ -105,8 +105,4 @@ del.addEventListener('click', function(e){
         ansScreen.innerText = ansScreen.innerText.slice(0, -1);
         numString = numString.slice(0,-1);
     }
-    else{
-        ansScreen.innerText = topScreen.innerText;
-        topScreen.innerText = '';
-    }
 })
