@@ -78,12 +78,12 @@ for (var i = 0 ; i < operator.length; i++) {
                 nums+=1;
                 numString = numString.concat(e.target.innerText);
                 topScreen.innerText = numString;
-                ansScreen.innerText = ' '; 
+                ansScreen.innerText = ''; 
                 allowed = 'no';
             }
             else{
                 perform(numString);
-                ansScreen.innerText = ans;
+                ansScreen.innerText = '';
                 cat = 'no';
                 numString = numString.concat(e.target.innerText);
                 topScreen.innerText = numString;
@@ -98,11 +98,16 @@ equal.addEventListener('click', function(){
     perform(numString);
     topScreen.innerText = ans;
     ansScreen.innerText = '';
+    
 })
 
 del.addEventListener('click', function(e){
     if(ansScreen.innerText){
         ansScreen.innerText = ansScreen.innerText.slice(0, -1);
         numString = numString.slice(0,-1);
+    }
+    else{
+        ansScreen.innerText = topScreen.innerText;
+        topScreen.innerText = '';
     }
 })
